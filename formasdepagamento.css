@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#site{
+    background-color: snow;
+    color: snow;
+    font-family: 'Archivo', sans-serif;
+    display: grid;
+    grid-template-columns:6% 11% 11% 11% 11% 11% 11% 11% 11% 6%;
+    grid-template-rows: 45px 120px auto 40px auto auto 90px auto auto 80px auto auto;
+}
+img{
+    max-width: 100%;
+}
+header img{
+    width: 30%; 
+    margin: 20px 80px;
+}
+#barra{
+    background-color: darkred;
+    grid-column: 1/11;
+}
+#topo{
+    background-color: snow;
+    grid-column:1/11;
+    display:flex;
+    border-bottom: 3px solid black;
+}
+#menu{
+    background-color: snow;
+    width: 100%;
+}
+#menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+}
+#menu ul li{
+    font-size: 18px;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+}
+#menu ul li a{
+    text-decoration: none;
+}
+#conteudoprincipal{
+    background-color: #dfece6;
+    grid-column:1/11;
+    margin: 10px 0px 0px 0px;
+    padding: 40px 90px;
+    color: #3ca2a2;
+}
+#formasdepagamento{
+    grid-column:2/10;
+    grid-row: 5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#rodape{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #3ca2a2;
+    grid-column:1/11;
+    grid-row: 11/13;
+    justify-content:space-between;
+}
+#logo{
+    width: 425px;
+    height: 80px;
+    margin: 20px 20px 0px;
+    grid-column: 1;
+}
+#botao{
+    background-color: darkred;
+    border-radius: 60px;
+    padding: 7px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 138px;
+    height: 32px;
+    margin: auto;
+}
+#botao a{
+    font-size:14px;
+    color: snow;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+#pagamento{
+    grid-column: 3;
+    grid-row: 1;
+    margin: auto;
+}
+#cartao{
+    grid-column: 2;
+    grid-row:2;
+    width: 400px;
+    height: 108px
+}
+#cartao img{
+    width: 60px;
+    margin: 0px 50%;
+}

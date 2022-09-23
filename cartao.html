@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>NUNES SUPERMERCADO</title>
+        <meta charset="utf-8">
+        <link href="cartao.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+	<div id="site">
+        <div id="barra"></div>
+		<header id="topo">
+			<img src="imagens/logo.png">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html.html">HOME</a></li>
+                        <li><a href="nossaloja.html">NOSSA LOJA</a></li>
+                        <li><a href="formasdepagamento.html">FORMAS DE PAGAMENTO</a></li>
+                    </ul>
+                </nav>
+        </header> 
+        
+		<main id="conteudoprincipal">
+			<div>
+                <h1>Cartão</h1>
+                <p>Home>>Cartão</p>
+            </div>
+		</main>
+        
+        <article id="cartão">
+           <form action="arquivo.php" method="GET">
+			<label>Seu nome:
+				<input type="text" name="nomecompleto" placeholder="Digite seu nome completo">
+			</label>
+			<br><br>
+			<label>Data de nascimento:
+				<input type="date" name="datadenascimento">
+			</label>
+			<br><br>
+			<label>Digite seu e-mail:
+				<input type="email" name="email" placeholder="Digite seu e-mail">
+			</label>
+			<br><br>
+			<fieldset>
+				<legend>Sexo:</legend>
+					<input type="radio" name="sexo" value="Masculino" id="sexoM">
+					<label for="sexoM">Masculino</label>
+					<input type="radio" name="sexo" value="Feminino" id="sexoF">
+					<label for="sexoF">Feminino</label>
+			</fieldset>
+            <br>
+             <label>Telefone:
+               <input type="tel" name="telefone" placeholder="(77) 99999-9999">
+            </label> 
+            <br><br>
+			<label>CPF ou CNPJ:
+				<select name="Documento">
+					<option value="CPF">CPF
+					</option>
+					<option value="CNPJ">CNPJ
+                    </option>
+				</select>
+			</label>
+            <br><br>
+            <label>CNPJ ou CPF:
+               <input type="number" name="CNPJouCPF">
+            </label>
+        	<br><br>        
+            <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                    <option value="BA">BA</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                </select>
+			<br><br>  
+			<button type="submit">Solicitar</button>
+		  </form>
+        </article>
+        
+        <footer id="rodape">
+            <div id="logo">
+                <a href="index.html.html"><img src="imagens/logo.png"></a>
+            </div>
+            <div id="botao">
+                <a href="nossaloja.html">Conheça nossa loja</a>
+            </div>
+            <div id="pagamento">
+                <h4>Formas de pagamento</h4>
+                <h5>Cartão de crédito</h5>
+                <img src="imagens/cartaodecredito.png">
+            </div>
+            <div id="cartao">
+                <p>Faça pagamentos com o NUNES CARD</p>
+                <p>Cadastre-se</p>
+                <a href="cartao.html"><img src="imagens/cartao.png"></a>
+            </div>
+        </footer>
+
+    </div>
+
+    </body> 
+</html>
